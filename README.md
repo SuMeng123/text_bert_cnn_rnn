@@ -1,6 +1,8 @@
 # TEXT_BERT_CNN
 在 Google BERT Fine-tuning基础上，利用cnn进行中文文本的分类;<br>
 <br>
+本项目改编自[text_bert_cnn](https://github.com/cjymz886/text_bert_cnn)，原项目是一个cnn的10分类问题，作者添加了Bi-Lstm可供大家选择，并且代码中已经改为2分类问题;<br>
+<br>
 没有使用tf.estimator API接口的方式实现，主要我不太熟悉，也不习惯这个API，还是按原先的[text_cnn](https://github.com/cjymz886/text-cnn)实现方式来的;<br>
 <br>
 训练结果：在验证集上准确率是96.4%左右，训练集是100%；，这个结果单独利用cnn也是可以达到的。这篇blog不是来显示效果如何，主要想展示下如何在bert的模型下Fine-tuning，觉得以后这种方式会成为主流。<br>

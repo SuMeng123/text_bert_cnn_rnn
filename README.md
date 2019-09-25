@@ -1,5 +1,5 @@
 # TEXT_BERT_CNN_RNN
-在 Google BERT Fine-tuning基础上，利用cnn进行中文文本的分类;<br>
+在 Google BERT Fine-tuning基础上，利用cnn或rnn进行中文文本的分类;<br>
 <br>
 本项目改编自[text_bert_cnn](https://github.com/cjymz886/text_bert_cnn)，原项目是一个cnn的10分类问题，作者添加了Bi-Lstm可供大家选择，并且代码中已经改为2分类问题;<br>
 <br>

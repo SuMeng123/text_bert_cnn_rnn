@@ -35,5 +35,14 @@ bert会导致运行效率降低很多，毕竟模型的参数量摆在那里，�
 
 5 参考
 =
+
 1. [google-research/bert](https://arxiv.org/abs/1408.5882)
 2. [brightmart/bert_language_understanding](https://github.com/brightmart/bert_language_understanding)
+
+6 在bert上层添加Bi-Lstm
+
+=
+
+![吕给我的代码截图](./img/Image.png)
+
+发现这个代码很像自己的ner-slot_filling项目，可以看一下

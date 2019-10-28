@@ -53,3 +53,12 @@ bert会导致运行效率降低很多，毕竟模型的参数量摆在那里，�
 
 ![吕给我的代码截图](./img/Image.png)
 
+7 考察点预计参考
+=
+获取bert模型的输出非常简单，使用 model.get_sequence_output()和model.get_pooled_output() 两个方法。
+```
+output_layer = model.get_sequence_output()# 这个获取每个token的output 输出[batch_size, seq_length, embedding_size] 如果做seq2seq 或者ner 用这个
+
+output_layer = model.get_pooled_output() # 这个获取句子的output
+```
+当我们用model.get_sequence_output()获取每个单词的词向量的时候注意，头尾是[CLS]和[SEP]的向量。做NER或seq2seq的时候需要注意。

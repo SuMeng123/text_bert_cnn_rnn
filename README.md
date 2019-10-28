@@ -8,7 +8,7 @@
 训练结果：在验证集上准确率是96.4%左右，训练集是100%；，这个结果单独利用cnn也是可以达到的。这篇blog不是来显示效果如何，主要想展示下如何在bert的模型下Fine-tuning，觉得以后这种方式会成为主流。<br>
 
 ---
-以下两个项目特别有参考价值，关于模型可视化、模型embedding、batch_iter等一系列流程，值得学习参考<br>
+以下两个项目特别有参考价值，关于词向量嵌入、模型可视化、模型embedding、batch_iter等一系列流程，值得学习参考<br>
 ### [text_cnn项目](https://github.com/cjymz886/text-cnn)
 嵌入词级别所做的CNN文本分类。本实验的主要目的是为了探究基于Word2vec训练的词向量嵌入CNN后，对模型的影响。
 ### [text-classification-cnn-rnn项目](https://github.com/gaussic/text-classification-cnn-rnn)

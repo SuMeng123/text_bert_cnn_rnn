@@ -144,7 +144,7 @@ class TextRNN(object):
                 input_mask=self.input_mask,
                 token_type_ids=self.segment_ids,
                 use_one_hot_embeddings=self.config.use_one_hot_embeddings)
-            embedding_inputs= bert_model.get_sequence_output()
+            embedding_inputs= bert_model.get_sequence_output()# 这个获取每个token的output 输出[batch_size, seq_length, embedding_size] 如果做seq2seq 或者ner 用这个
             # self.word_embeddings = tf.nn.dropout(embedding_inputs,self.dropout)
             self.word_embeddings = embedding_inputs
 

@@ -46,7 +46,7 @@ bert会导致运行效率降低很多，毕竟模型的参数量摆在那里，�
 1. [google-research/bert](https://arxiv.org/abs/1408.5882)
 2. [brightmart/bert_language_understanding](https://github.com/brightmart/bert_language_understanding)
 
-6 在bert上层添加Bi-Lstm
+6 考察
 =
 获取bert模型的输出非常简单，使用 model.get_sequence_output()和model.get_pooled_output() 两个方法。
 ```
@@ -56,7 +56,7 @@ output_layer = model.get_pooled_output() # 这个获取句子的output
 ```
 当我们用model.get_sequence_output()获取每个单词的词向量的时候注意，头尾是[CLS]和[SEP]的向量。做NER或seq2seq的时候需要注意。
 
-7 考察点预计参考
+7 在bert上层添加Bi-Lstm
 =
 
 当时自己在用原生bert，并没有想过在使用bert的预训练结果，在上层添加模型的方法，这是吕同学发给我的代码截图，我是第一次听说这种做法。发现这个代码很像自己的ner-slot_filling项目，可以看一下。

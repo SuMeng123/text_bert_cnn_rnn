@@ -10,6 +10,7 @@
 嵌入词级别所做的CNN文本分类。本实验的主要目的是为了探究基于Word2vec训练的词向量嵌入CNN后，对模型的影响。
 ### [text-classification-cnn-rnn](https://github.com/gaussic/text-classification-cnn-rnn)
 基于字符级别所做的CNN/RNN文本分类。<br>
+
 1 环境
 =
 python3<br>
